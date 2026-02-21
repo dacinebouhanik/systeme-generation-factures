@@ -1,8 +1,8 @@
-# 📊 Système automatisé de génération de factures clients
+# Système automatisé de génération de factures clients
 
-## 🎯 Description du projet
+## Description du projet
 
-Ce projet a été réalisé dans le cadre d’un travail personnel en Python.
+Ce projet a été réalisé dans le cadre d’un apprentissage personnel en Python.
 
 L’objectif est d’automatiser la génération de factures clients à partir de plusieurs fichiers Excel contenant des feuilles de commande.
 
@@ -17,14 +17,26 @@ Le programme permet de :
 
 ---
 
-## ⚙️ Fonctionnement
+## Fonctionnement
 
-Le programme suit une logique de type ETL :
+Le programme suit une logique de traitement de données proche d’un processus ETL :
 
-1. **Extraction** : lecture des fichiers Excel présents dans un dossier
-2. **Transformation** : nettoyage des données (remplacement des valeurs vides, regroupement par client, tri par date)
-3. **Chargement** : création automatique d’un fichier facture par client
+1. **Extraction** : lecture des fichiers Excel présents dans un dossier donné.
+2. **Transformation** : nettoyage des données (remplacement des valeurs vides), regroupement des commandes par client et tri par date.
+3. **Chargement** : création automatique d’un fichier facture individuel pour chaque client.
 
 ---
 
-## 📁 Structure du projet
+## Structure du projet
+
+```
+systeme-generation-factures/
+│
+├── main.py
+├── traitement_excel.py
+├── README.md
+├── requirements.txt
+├── .gitignore
+└── data/
+    └── exemple_commande.xlsx
+```
